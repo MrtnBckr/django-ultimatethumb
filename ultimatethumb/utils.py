@@ -13,8 +13,8 @@ from django.core.cache import cache
 from django.core.files.storage import default_storage
 from django.urls import reverse
 from django.utils.encoding import force_bytes
-from django.utils.six.moves.urllib import parse as urlparse
 from PIL import Image as PILImage
+from six.moves.urllib import parse as urlparse
 
 
 SIZE_RE = re.compile(r'^(\d+%?)(?:x(\d+%?))?(?:\:(\d+)(?:x(\d+))?)?$')

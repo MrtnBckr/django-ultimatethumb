@@ -3,9 +3,9 @@ import os
 from django.conf import settings
 from django.http import Http404, HttpResponse, HttpResponseNotModified
 from django.utils.http import http_date
-from django.utils.six.moves.urllib.parse import urlparse
 from django.views.generic import View
 from django.views.static import was_modified_since
+from six.moves.urllib.parse import urlparse
 
 from .thumbnail import Thumbnail
 
